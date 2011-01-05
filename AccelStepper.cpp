@@ -215,7 +215,7 @@ void AccelStepper::step(uint8_t step)
 // 0 pin step function (ie for functional usage)
 void AccelStepper::step0()
 {
-  if (_speed) {
+  if (_speed > 0) {
     _forward();
   } else {
     _backward();
