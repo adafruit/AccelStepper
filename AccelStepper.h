@@ -66,8 +66,14 @@
 #ifndef AccelStepper_h
 #define AccelStepper_h
 
-#include <stdlib.h>
-#include <wiring.h>
+#if ARDUINO >= 100
+ #include "Arduino.h"
+#else
+ #include "WProgram.h"
+ #include "stdlib.h"
+ #include "wiring.h"
+#endif
+
 
 // These defs cause trouble on some versions of Arduino
 #undef round

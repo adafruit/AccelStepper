@@ -3,7 +3,6 @@
 // Copyright (C) 2009 Mike McCauley
 // $Id: AccelStepper.cpp,v 1.2 2010/10/24 07:46:18 mikem Exp mikem $
 
-#include "WProgram.h"
 #include "AccelStepper.h"
 
 void AccelStepper::moveTo(long absolute)
